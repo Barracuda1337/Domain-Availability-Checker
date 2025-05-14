@@ -36,36 +36,36 @@ A modern web application built with Next.js for checking domain availability, pe
 ## 📦 Installation
 
 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone https://github.com/Barracuda1337/Domain-Availability-Checker.git
-cd domain-checker
-\`\`\`
+cd Domain-Availability-Checker
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Set up the database:
-\`\`\`bash
+```bash
 npx prisma generate
 npx prisma db push
-\`\`\`
+```
 
 4. Configure environment variables:
-   - Copy \`.env.example\` to \`.env\`
-   - Update the values in \`.env\` with your API keys
+   - Copy `.env.example` to `.env`
+   - Update the values in `.env` with your API keys
 
 5. Run the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ## 🛠️ Environment Variables
 
-Create a \`.env\` file in the root directory with the following variables:
+Create a `.env` file in the root directory with the following variables:
 
-\`\`\`env
+```env
 # Database Configuration
 DATABASE_URL="file:./dev.db"
 
@@ -74,21 +74,21 @@ DATABASE_URL="file:./dev.db"
 JSONWHOIS_API_KEY=""
 RAPIDAPI_KEY=""
 WHOISFREAKS_API_KEY=""
-\`\`\`
+```
 
 > ⚠️ **Security Note**: 
-> - Never commit your \`.env\` file to version control
+> - Never commit your `.env` file to version control
 > - Keep your API keys private and secure
 > - Rotate your API keys periodically
 > - Use environment variables for all sensitive data
 
 ## 📝 API Endpoints
 
-- \`/api/check-domain\`: Check domain availability
-- \`/api/whois\`: Get WHOIS information
-- \`/api/dns\`: Get DNS records
-- \`/api/save-domain\`: Save a domain
-- \`/api/saved-domains\`: Manage saved domains
+- `/api/check-domain`: Check domain availability
+- `/api/whois`: Get WHOIS information
+- `/api/dns`: Get DNS records
+- `/api/save-domain`: Save a domain
+- `/api/saved-domains`: Manage saved domains
 
 ## 🔒 Security
 
@@ -99,7 +99,7 @@ This project uses several third-party APIs for domain checking. To use the appli
    - [RapidAPI - WHOIS API](https://rapidapi.com/apininjas/api/whois-by-api-ninjas)
    - [WHOISFreaks](https://whoisfreaks.com)
 
-2. Add your API keys to the \`.env\` file
+2. Add your API keys to the `.env` file
 3. Never expose your API keys in the code or commit them to version control
 4. Use environment variables for all sensitive data
 
